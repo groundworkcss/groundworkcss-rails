@@ -7,7 +7,7 @@ Add GroundworkCSS to your rails project.
 
 Add this to your Gemfile:
 ```
-gem 'groundworkcss', :git => 'https://github.com/groundworkcss/groundworkcss-rails', :submodules => true
+gem 'groundworkcss', :git => 'https://github.com/groundworkcss/groundworkcss-rails'
 ```
 
 And then run:
