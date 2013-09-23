@@ -23,11 +23,11 @@
     placeholder[9] = "Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc posuere. Nullam lectus justo, vulputate eget, mollis sed, tempor sed, magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam neque. Curabitur ligula sapien, pulvinar a, vestibulum quis, facilisis vel, sapien. Nullam eget nisl. Donec vitae arcu."
 
     createPlaceholderContent = (el) ->
-      options =
-        type: $(el).data('placeholderType') if $(el).data('placeholderType') != 'undefined'
-        amount: $(el).data('placeholderAmount') if $(el).data('placeholderAmount') != 'undefined'
-        html: $(el).data('placeholderHtml') if $(el).data('placeholderHtml') != 'undefined'
-        punctuation: $(el).data('placeholderPunctuation') if $(el).data('placeholderPunctuation') != 'undefined'
+      options = {}
+      options.type = $(el).data('placeholderType') if $(el).data('placeholderType') != 'undefined'
+      options.amount = $(el).data('placeholderAmount') if $(el).data('placeholderAmount') != 'undefined'
+      options.html = $(el).data('placeholderHtml') if $(el).data('placeholderHtml') != 'undefined'
+      options.punctuation = $(el).data('placeholderPunctuation') if $(el).data('placeholderPunctuation') != 'undefined'
 
       opts = $.extend({}, $.fn.placeholderText.defaults, options)
 
